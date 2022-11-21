@@ -124,6 +124,13 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .h1-hero {
   font-weight: 900;
@@ -158,9 +165,7 @@ img {
 .list-about-item:not(:last-child) {
   margin-right: 30px;
 }
-.h {
-  text-align: center;
-}
+
 .section-work {
   padding-top: 0;
 }
@@ -190,6 +195,9 @@ img {
 }
 .item {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team {
   padding-top: 30px;
@@ -202,12 +210,14 @@ img {
   color: var(--text-color);
   margin-top: 10px;
 }
-.h {
+.h-main {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   margin-bottom: 50px;
+  text-align: center;
 }
+
 .h3-team {
   font-weight: 500;
   font-size: 16px;
@@ -222,16 +232,17 @@ img {
   color: var(--text-color);
   text-align: center;
 }
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 address {
   margin-top: 20px;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-item {
+  margin-right: 70px;
+  margin-top: 9px;
+}
+.footer-item:first-child {
+  margin-top: 0;
 }
 
 .button-p {
@@ -250,6 +261,9 @@ address {
 .button-p:focus {
   background: var(--active-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .visually-hidden {
   position: absolute;
@@ -319,10 +333,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--active-color);
-}
+
 .footer-color {
   color: var(--footer-color);
 }
@@ -378,8 +389,6 @@ address {
 .social-item {
   width: 44px;
   height: 44px;
-  background-color: var(--white-color);
-  border-radius: 50%;
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
@@ -390,11 +399,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--white-color);
+  border-radius: 50%;
 }
 
 .team-list .social-link:hover {
   background-color: var(--active-color);
-  border-radius: 50%;
 }
 
 .team-list .social-link:hover .social-icon {
@@ -402,12 +412,10 @@ address {
 }
 
 .item-client {
-  box-sizing: border-box;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  text-align: center;
 }
 .icon-client {
   width: 106px;
@@ -415,7 +423,6 @@ address {
   margin-top: 16px;
   fill: var(--icon-color);
 }
-
 .icon-client:hover,
 .icon-client:focus {
   fill: var(--active-color);
@@ -424,26 +431,37 @@ address {
 .item-client:focus {
   border-color: var(--active-color);
 }
-
-.footer-h {
+.client {
+  text-align: center;
+}
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+.client-link {
+  width: 100%;
+  height: 100%;
+}
+.footer-p {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 20px;
   text-align: left;
 }
 .footer-container {
   display: flex;
-  gap: 70px;
- }
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-icons {
   display: flex;
   justify-content: center;
-  margin-top: 7px;
 }
 
 .footer-icon {
@@ -456,8 +474,32 @@ address {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  margin-right: 10px;
+}
+.footer-items:last-child {
+  margin-right: 0px;
 }
 .footer-items:hover {
   background-color: var(--active-color);
 }
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--active-color);
+}
 
+.portfolio-link:hover,
+.portfolio-link:focus {
+  background: var(--active-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
