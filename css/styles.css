@@ -10,17 +10,20 @@
   --team-background: #f5f4fa;
   --icon-color: #afb1b8;
 }
+
 h1,
 h2,
 h3,
 p {
   margin: 0;
 }
+
 img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
